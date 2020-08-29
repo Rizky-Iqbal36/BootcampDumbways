@@ -1,0 +1,18 @@
+/*index.php*/
+#garis{
+    margin-top: 55px;
+    border-color: darkorange;
+    border-width: 4px;
+}
+/*add_video.php*/
+#dpw1{
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+}
+/*add_category.php*/
+#dpw2{
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+}
