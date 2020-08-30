@@ -17,17 +17,17 @@ int main()
 {
     srand(time(NULL));//membuat waktu dalam world berjalan
     int gen = 0;
-    char key [35] ={};
+    char key [36] ={};
     //inisialisasi setiap indeks dengan char berupa angka(0-9) dan huruf(a-z[huruf kecil]) (menggunakan ascii)
-    for(int i = 0;i<35;i++){
-        if(i>=9){
-            key[i] = i+88;
+    for(int i = 0;i<36;i++){
+        if(i>=10){
+            key[i] = i+87;
         }
         else{
             key[i] = i+48;
         }
         //cek inisialisasi
-        //printf("%c\n",key[i]);
+        printf("[%d] = %c\n",i,key[i]);
     }
     printf("Mau generate berapa banyak? = ");   scanf("%d",&gen);
     for(int y = 0;y<gen;y++)
@@ -37,4 +37,3 @@ int main()
     }
     return 0;
 }
-
