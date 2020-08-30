@@ -13,14 +13,14 @@ function sortindeks(array){
   console.log(array);
   let temp = [];
   for(let i = 0;i<array.length;i++){
-    array[i].sort();
     for(let j = i+1;j<array.length;j++){
       if(array[i].length>array[j].length){
-        temp[1] = array[i];
+        temp = array[i];
         array[i] = array[j];
-        array[j] = temp[1];
+        array[j] = temp;
       }
     }
+    array[i].sort();
   }
   console.log("after :\n");
   console.log(array);
